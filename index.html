@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eddie Kim | Ph.D. Student, Rice University</title>
-    <meta name="description" content="Eddie Kim is a Ph.D. student in Computer Science at Rice University, advised by Lydia Kavraki, developing physics-informed generative AI to model protein flexibility and function.">
+    <meta name="description" content="Eddie Kim is a Ph.D. student in Computer Science at Rice University, advised by Lydia Kavraki, working on generative models and molecular world models for proteins.">
     <link rel="canonical" href="https://gomgom03.github.io/">
     <!-- Google Search Console verification: keep this tag, removing it un-verifies the site -->
     <meta name="google-site-verification" content="rDhSDUkBwDGPh3LK6fc8DtUiWpKduUHM0qN-HKDj9Oc">
 
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Eddie Kim | Rice University">
-    <meta property="og:description" content="Ph.D. student in Computer Science at Rice University working on generative AI for protein dynamics.">
+    <meta property="og:description" content="Ph.D. student in Computer Science at Rice University working on generative models and molecular world models for proteins.">
     <meta property="og:url" content="https://gomgom03.github.io/">
     <meta property="profile:first_name" content="Eddie">
     <meta property="profile:last_name" content="Kim">
@@ -24,7 +24,7 @@
     {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
-        "dateModified": "2026-10-12",
+        "dateModified": "2026-10-13",
         "mainEntity": {
             "@type": "Person",
             "name": "Eddie Kim",
@@ -42,17 +42,15 @@
                 "name": "Rice University"
             },
             "knowsAbout": [
-                "Computational structural biology",
-                "Generative AI",
-                "Diffusion models",
-                "Protein conformational ensembles",
-                "Protein design",
-                "Bioinformatics"
+                "Generative models",
+                "Molecular world models",
+                "Protein dynamics",
+                "Molecular simulation",
+                "Structure-based reasoning"
             ],
             "award": "NSF Graduate Research Fellowship",
             "email": "mailto:eddie.kim@rice.edu",
             "sameAs": [
-                "https://orcid.org/0000-0002-3770-6838",
                 "https://scholar.google.com/citations?user=cw4_GJIAAAAJ",
                 "https://github.com/gomgom03"
             ]
@@ -190,6 +188,15 @@
             color: var(--text);
         }
 
+        .tag {
+            margin-left: 6px;
+            padding: 0 6px;
+            border: 1px solid var(--rule);
+            border-radius: 4px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
         .actions {
             display: block;
             margin-top: 2px;
@@ -254,9 +261,7 @@
                     <li><a href="mailto:eddie.kim@rice.edu">Email</a></li>
                     <!-- <li><a href="cv.pdf">CV</a></li> -->
                     <li><a href="https://scholar.google.com/citations?user=cw4_GJIAAAAJ">Google Scholar</a></li>
-                    <li><a href="https://orcid.org/0000-0002-3770-6838">ORCID</a></li>
                     <li><a href="https://github.com/gomgom03">GitHub</a></li>
-                    <li><a href="https://www.kavrakilab.rice.edu/">Kavraki Lab</a></li>
                 </ul>
             </div>
             <img class="headshot" src="img/headshot.jpg" alt="Photo of Eddie Kim" width="160" height="160">
@@ -265,28 +270,35 @@
         <section id="about">
             <h2>About</h2>
             <p>
-                I'm a Ph.D. student in Computer Science at Rice University, advised by
-                <a href="https://profiles.rice.edu/faculty/lydia-e-kavraki">Prof. Lydia Kavraki</a>,
-                and an NSF Graduate Research Fellow.
+                Hi! I am a Ph.D. student in Computer Science at Rice University, advised by
+                Dr. Lydia Kavraki.
+                My research focuses on generative models and molecular world models for proteins, with applications
+                in protein dynamics, molecular simulation, and structure-based reasoning.
             </p>
             <p>
-                I work where <strong>computational structural biology</strong> meets <strong>generative AI</strong>.
-                Structure predictors give a single static snapshot of a protein, but function depends on how it moves.
-                I develop physics-informed, <strong>diffusion-based models</strong> that turn static structures into
-                biologically relevant conformational ensembles and transition pathways. Applications include judging
-                how useful predicted structures are, understanding protein–protein interactions such as
-                pMHC–TCR recognition, and rational protein and antibody design.
-            </p>
-            <p>
-                Before my Ph.D., I earned B.S. degrees in Computer Science and Biosciences at Rice, where I built
-                bioinformatics tools in <a href="https://treangenlab.com/">Todd Treangen's lab</a> and worked on
-                single-cell imaging analysis at CellChorus.
+                Before my Ph.D., I earned B.S. degrees in Computer Science and Biosciences at Rice, where I developed
+                computational methods for metagenomics and microbial genomics with
+                Dr. Todd Treangen.
+                I also worked as an AI Engineer at CellChorus and as a SWE Intern at AbbVie.
             </p>
         </section>
 
         <section id="publications">
             <h2>Publications</h2>
             <ol class="entries">
+                <li>
+                    <span class="title">Omi: Bridging the Informatics to Bio Gap with a Natural Language Co-pilot</span>
+                    <span class="meta">P.B. Kalvapalle, <strong>E. Kim</strong>, M. Tanevski, et al.
+                        &mdash; <em>ISMB/ECCB 2025</em> (2025) <span class="tag">Poster</span></span>
+                </li>
+                <li>
+                    <span class="title">Single-cell proliferation assay enables rapid and quantitative donor screening</span>
+                    <span class="meta">H. Wilson, M. Fathi, S.R. Kotha, <strong>E. Kim</strong>, et al.
+                        &mdash; <em>Journal for ImmunoTherapy of Cancer</em> 12(Suppl 2), A155 (2024) <span class="tag">Abstract</span></span>
+                    <span class="actions">
+                        <a href="https://doi.org/10.1136/jitc-2024-SITC2024.0139">Abstract</a>
+                    </span>
+                </li>
                 <li>
                     <span class="title">Olivar: towards automated variant aware primer design for multiplex tiled amplicon sequencing of pathogens</span>
                     <span class="meta">M.X. Wang, E.G. Lou, <strong>E. Kim</strong>, et al.
@@ -308,67 +320,12 @@
             </ol>
         </section>
 
-        <section id="talks">
-            <h2>Talks &amp; Posters</h2>
-            <ul class="entries">
-                <li>
-                    <span class="title">Omi: Bridging the Informatics to Bio Gap with a Natural Language Co-pilot</span>
-                    <span class="meta">P.B. Kalvapalle, <strong>E. Kim</strong>, M. Tanevski, et al.
-                        &mdash; <em>ISMB/ECCB 2025</em>, Tech Track oral presentation, Jul. 2025</span>
-                </li>
-                <li>
-                    <span class="title">Omi: An Assistant for Streamlined Metagenomic Analysis</span>
-                    <span class="meta"><strong>E. Kim</strong>, M. Tanevski, et al.
-                        &mdash; <em>Rice Engineering and Computing Undergraduate Research Poster Symposium</em>, Feb. 2025</span>
-                </li>
-                <li>
-                    <span class="title">Single-cell proliferation assay enables rapid and quantitative donor screening</span>
-                    <span class="meta">H. Wilson, M. Fathi, S.R. Kotha, <strong>E. Kim</strong>, et al.
-                        &mdash; <em>SITC 2024 Annual Meeting</em>, poster, Nov. 2024</span>
-                </li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
+        <section id="awards">
+            <h2>Awards</h2>
             <ul class="entries">
                 <li class="row">
-                    <span><strong>Ph.D. Student</strong>, Kavraki Lab, Rice University</span>
-                    <span class="when">2025 &ndash; present</span>
-                </li>
-                <li class="row">
-                    <span><strong>AI Engineer</strong>, CellChorus &mdash; segmentation and analysis pipelines for single-cell imaging</span>
-                    <span class="when">2024 &ndash; 2025</span>
-                </li>
-                <li class="row">
-                    <span><strong>Undergraduate Researcher</strong>, Treangen Lab, Rice University &mdash; Olivar, Parsnp 2.0, Omi</span>
-                    <span class="when">2021 &ndash; 2025</span>
-                </li>
-                <li class="row">
-                    <span><strong>Software Engineer Intern</strong>, AbbVie &mdash; lab data platform for the Cell Culture and Development group</span>
-                    <span class="when">2023 &ndash; 2024</span>
-                </li>
-            </ul>
-        </section>
-
-        <section id="teaching">
-            <h2>Teaching</h2>
-            <ul class="entries">
-                <li class="row">
-                    <span><strong>Head TA</strong>, COMP 182: Algorithmic Thinking &mdash; led a staff of 30+ TAs</span>
-                    <span class="when">Spring 2024, Spring 2025</span>
-                </li>
-                <li class="row">
-                    <span><strong>TA</strong>, COMP 382: Reasoning About Algorithms</span>
-                    <span class="when">Fall 2024</span>
-                </li>
-                <li class="row">
-                    <span><strong>TA</strong>, COMP 182: Algorithmic Thinking</span>
-                    <span class="when">Spring 2023, Fall 2023</span>
-                </li>
-                <li class="row">
-                    <span><strong>TA</strong>, COMP 140: Computational Thinking</span>
-                    <span class="when">Fall 2022</span>
+                    <span><strong>NSF Graduate Research Fellowship</strong></span>
+                    <span class="when">2026</span>
                 </li>
             </ul>
         </section>
